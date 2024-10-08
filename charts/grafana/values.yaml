@@ -1,9 +1,14 @@
 admin:
-  user: admin
-  password: Lalit@123
-
+  existingSecret: ""
+  password: "Lalit@123" # Default value, but can be overridden
 service:
   enabled: true
-  type: LoadBalancer
+  type: ClusterIP
   port: 80
+  targetPort: 3000
   annotations: {}
+ingress:
+  enabled: false
+  annotations: {}
+  path: /
+  host: grafana.example.com
