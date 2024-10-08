@@ -1,7 +1,7 @@
 # grafana-values.yaml
 
 admin:
-  existingSecret: grafana-admin-secret  # Reference to a secret for admin credentials
+  existingSecret: grafana-admin-pass  # Reference to a secret for admin credentials
 
 image:
   repository: grafana/grafana  # Default Grafana image
