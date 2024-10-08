@@ -1,16 +1,12 @@
 admin:
-  existingSecret: ""
-  user: admin
-  password: admin123
-
-service:
-  type: ClusterIP
+  existingSecret: grafana-admin-secret  # Reference to a secret for admin credentials
 
 persistence:
   enabled: true
-  size: 10Gi
-  storageClassName: standard
+  size: 5Gi
+  storageClassName: "local-path"  # Change as needed
 
-grafana.ini:
-  server:
-    root_url: "http://192.168.1.8:3000/"
+service:
+  type: LoadBalancer  # Change to ClusterIP if you don't need external access
+
+# Add additional configurations as needed
