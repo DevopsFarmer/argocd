@@ -1,0 +1,11 @@
+apiVersion: v2
+name: grafana
+description: A Helm chart for Grafana
+type: application
+version: 6.16.0           # Chart version
+appVersion: 9.4.3          # Version of the Grafana application
+icon: https://grafana.com/favicon.ico
+keywords:
+  - grafana
+  - monitoring
+  - dashboard
