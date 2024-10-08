@@ -9,4 +9,12 @@ persistence:
 service:
   type: LoadBalancer  # Change to ClusterIP if you don't need external access
 
+ingress:
+  enabled: false
+  hosts:
+    - host: grafana.example.com  # Replace with your actual domain
+      paths:
+        - /
+
+
 # Add additional configurations as needed
