@@ -1,0 +1,9 @@
+admin:
+  user: admin
+  password: Lalit@123
+
+service:
+  enabled: true
+  type: LoadBalancer
+  port: 80
+  annotations: {}
