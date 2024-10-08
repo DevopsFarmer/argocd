@@ -1,14 +1,7 @@
-admin:
-  existingSecret: ""
-  password: "Lalit@123" # Default value, but can be overridden
+adminPassword: "Lalit@123"
 service:
-  enabled: true
   type: ClusterIP
-  port: 80
-  targetPort: 3000
-  annotations: {}
 ingress:
-  enabled: false
-  annotations: {}
-  path: /
-  host: grafana.example.com
+  enabled: true
+  hosts:
+    - grafana.example.com
