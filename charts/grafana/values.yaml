@@ -1,7 +1,16 @@
-adminPassword: "Lalit@123"
+admin:
+  existingSecret: ""
+  user: admin
+  password: admin123
+
 service:
   type: ClusterIP
-ingress:
+
+persistence:
   enabled: true
-  hosts:
-    - grafana.example.com
+  size: 10Gi
+  storageClassName: standard
+
+grafana.ini:
+  server:
+    root_url: "http://192.168.1.8:3000/"
