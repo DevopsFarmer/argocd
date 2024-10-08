@@ -1,11 +1,9 @@
 apiVersion: v2
 name: grafana
 description: A Helm chart for Grafana
-type: application
-version: 6.16.0           # Chart version
-appVersion: 9.4.3          # Version of the Grafana application
-icon: https://grafana.com/favicon.ico
+version: 1.0.0
+appVersion: "9.3.2" # Specify the version of Grafana you want to deploy
 keywords:
   - grafana
   - monitoring
-  - dashboard
+  - observability
