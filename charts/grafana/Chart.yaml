@@ -1,9 +1,8 @@
 apiVersion: v2
 name: grafana
-description: A Helm chart for Grafana
 version: 1.0.0
-appVersion: "9.3.2" # Specify the version of Grafana you want to deploy
-keywords:
-  - grafana
-  - monitoring
-  - observability
+description: A Helm chart for deploying Grafana
+dependencies:
+- name: grafana
+  version: "6.51.1" # Change this to the latest version
+  repository: "https://grafana.github.io/helm-charts"
