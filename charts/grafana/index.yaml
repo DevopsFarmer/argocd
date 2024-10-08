@@ -1,0 +1,9 @@
+apiVersion: v1
+entries:
+  grafana:
+    - apiVersion: v2
+      name: grafana
+      version: 6.3.0 # Use your specific version
+      description: A Grafana chart for Kubernetes
+      urls:
+        - https://github.com/DevopsFarmer/argocd/raw/main/charts/grafana-6.3.0.tgz # This would be the URL to your packaged chart
